@@ -14,6 +14,9 @@ body {
   --icon-color: #6a737d;
   --border-color: #ff9a0045;
   --text-decoration-color: #ff9a00;
+  --tangeto-color: #f3500A;
+  --sinopia-color: #d92200;
+  --dark-red-color: #920004;
 }
 
 .container {
@@ -25,7 +28,7 @@ body {
 .fh {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .fv {
@@ -47,7 +50,11 @@ body {
   padding-bottom: 30px;
   margin-bottom: 15px;
 }
-
+.resume__block-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+}
 @media screen and (max-width: 576px) {
   .main-info,
   .contact_info_container {
@@ -98,6 +105,7 @@ body {
   text-decoration: none;
   display: flex;
   justify-content: start;
+  align-items: center;
 }
 
 .contact-info__item:not(:last-child) {
@@ -164,6 +172,43 @@ body {
   color: var(--secondary-text-color);
   text-align: justify;
 }
+.skills__container{
+  display:flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skills__category-title{
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.skills__list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  
+}
+.skill-tag{
+  padding: 10px;
+  font-size: 0.9rem;
+  background-color: var(--border-color);
+  color: var(--primary-text-color);
+  border-radius: 5%;
+  font-weight: 600;
+}
+.tangeto > * {
+  color: var(--tangeto-color);
+  border: 2px solid var(--tangeto-color);
+}
+.sinopia > * {
+  color: var(--sinopia-color);
+  border: 2px solid var(--sinopia-color);
+}
+.dark-red > *{
+  color: var(--dark-red-color);
+  border: 2px solid var(--dark-red-color);
+}
 Experience and additional info styles
 
 .experiences {
@@ -189,6 +234,7 @@ Experience and additional info styles
   text-decoration-color: var(--text-decoration-color);
   text-decoration-line: underline;
   text-align: left;
+  font-size: 21px;
   margin-bottom: 20px;
 }
 
@@ -212,9 +258,8 @@ Experience and additional info styles
 
 .experiences__company-project-responsibilities {
   color: var(--secondary-text-color);
-  padding-left: 20px;
+  margin-bottom:25px;
 }
-
 .additional-info {
   flex: 1 1 40%;
 }
@@ -238,6 +283,8 @@ Experience and additional info styles
 
 .additional-info__education-university-speciality {
   color: var(--primary-text-color);
+   text-decoration-color: var(--text-decoration-color);
+  text-decoration-line: underline;
   text-align: left;
   margin-bottom: 10px;
 }
