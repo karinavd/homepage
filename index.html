@@ -1,10 +1,346 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Résumé</title>
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    <main>
+      <div class="resume">
+        <div class="container">
+          <div class="resume__block">
+            <h1 class="contact-info__header">Karyna Avdieieva</h1>
+            <h3 class="contact-info__sub-header">Full-Stack Developer</h3>
+
+            <div class="contact_info_container fh">
+              <div class="contact-info__block contact-info__block--center">
+                <img
+                  class="contact-info__avatar"
+                  src="assets/avatar.png"
+                  alt="Avatar"
+                />
+              </div>
+
+              <div class="contact-info__block">
+                <a href="" rel="author" class="contact-info__item">
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg
+                      class="contact-info__item-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 384 512"
+                    >
+                      <path
+                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192
+        0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535
+        13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817
+        80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span>Cherkasy, Ukraine</span>
+                </a>
+                <a
+                  href="https://t.me/karinavd"
+                  rel="author"
+                  class="contact-info__item"
+                >
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 640 640"
+                    >
+                      <path
+                        fill="#5c5c62"
+                        d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM435 240.7C431.3 279.9 415.1 375.1 406.9 419C403.4 437.6 396.6 443.8 390 444.4C375.6 445.7 364.7 434.9 350.7 425.7C328.9 411.4 316.5 402.5 295.4 388.5C270.9 372.4 286.8 363.5 300.7 349C304.4 345.2 367.8 287.5 369 282.3C369.2 281.6 369.3 279.2 367.8 277.9C366.3 276.6 364.2 277.1 362.7 277.4C360.5 277.9 325.6 300.9 258.1 346.5C248.2 353.3 239.2 356.6 231.2 356.4C222.3 356.2 205.3 351.4 192.6 347.3C177.1 342.3 164.7 339.6 165.8 331C166.4 326.5 172.5 322 184.2 317.3C256.5 285.8 304.7 265 328.8 255C397.7 226.4 412 221.4 421.3 221.2C423.4 221.2 427.9 221.7 430.9 224.1C432.9 225.8 434.1 228.2 434.4 230.8C434.9 234 435 237.3 434.8 240.6z"
+                      />
+                    </svg>
+                  </div>
+                  <span>Telegram</span>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/karyna-avdieieva-bb2095280/"
+                  rel="author"
+                  class="contact-info__item"
+                >
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg
+                      class="contact-info__item-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9
+        480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4
+        416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96
+        102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1
+        243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9
+        54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2
+        0 79.7 44.3 79.7 101.9V416z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span>Karyna Avdieieva</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="resume__block">
+            <div class="intro">
+              <div class="intro__icon-wrapper">
+                <svg
+                  class="intro__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7
+            24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0
+            26.5 21.5 48 48 48h128c26.5 0 48-21.5
+            48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64
+            64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6
+            32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5
+            48-48V304c0-26.5-21.5-48-48-48z"
+                  ></path>
+                </svg>
+              </div>
+              <p class="intro_text">
+                Hi, I'm Karina, and I'm a passionate Full-Stack Developer with a
+                strong background in JavaScript and TypeScript. I have
+                experience working with React, Node.js and various databases to
+                build efficient and scalable web applications. I am dedicated to
+                writing clean, testable code and thrive in collaborative teams
+                that foster a culture of code reviews. I'm currently looking for
+                a great opportunity to kickstart my career and work on exciting
+                projects that will allow me to grow as a developer
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="resume__block">
+            <div class="skills">
+              <h3 class="skills__header">Skills</h3>
+              <div class="skills__container">
+                <div class="skills__category">
+                  <h4 class="skills__category-title">Frontend</h4>
+                  <div class="skills__list tangeto">
+                    <p class="skill-tag">JavaScript</p>
+                    <p class="skill-tag">TypeScript</p>
+                    <p class="skill-tag">React</p>
+                    <p class="skill-tag">HTML5</p>
+                    <p class="skill-tag">CSS3</p>
+                    <p class="skill-tag">Tailwind CSS</p>
+                  </div>
+                </div>
+
+                <div class="skills__category">
+                  <h4 class="skills__category-title">Backend</h4>
+                  <div class="skills__list sinopia">
+                    <p class="skill-tag">Node.js</p>
+                    <p class="skill-tag">Express.js</p>
+                    <p class="skill-tag">RESTful APIs</p>
+                    <p class="skill-tag">MongoDB</p>
+                    <p class="skill-tag">SQL</p>
+                  </div>
+                </div>
+
+                <div class="skills__category">
+                  <h4 class="skills__category-title">Tools & Workflow</h4>
+                  <div class="skills__list dark-red">
+                    <p class="skill-tag">Git/GitHub</p>
+                    <p class="skill-tag">Unit Testing (Vitest, RTL)</p>
+                    <p class="skill-tag">UI/UX Design</p>
+                    <p class="skill-tag">Agile/Kanban</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="resume__block">
+            <div class="main-info resume__block-container">
+              <div class="experiences">
+                <h3 class="experiences__header">Experience</h3>
+                <div class="experiences__company">
+                  <div class="experiences__company-header">
+                    <span class="experiences__company-header-durability"
+                      >2023-Present</span
+                    >
+                    <h3 class="experiences__company-header-name">
+                      Educational Project
+                    </h3>
+                  </div>
+
+                  <div class="experiences__company-project">
+                    <span class="experiences__company-project-role"
+                      >Frontend Developer</span
+                    >
+                    <h3 class="experiences__company-project-name">RS-Tandem</h3>
+                    <ul class="experiences__company-project-responsibilities">
+                      <li>
+                        Implemented authorization systems and state management
+                        using Firebase.
+                      </li>
+                      <li>
+                        Developed responsive UI components and dashboards with
+                        Tailwind CSS.
+                      </li>
+                      <li>
+                        Ensured code quality by writing unit tests with Vitest
+                        and React Testing Library.
+                      </li>
+                      <li>
+                        Collaborated with a team using Kanban boards and GitHub
+                        pull requests.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="experiences__company-project">
+                    <span class="experiences__company-project-role"
+                      >Full-Stack Developer</span
+                    >
+                    <h3 class="experiences__company-project-name">
+                      Application for automating the work of a clinic
+                    </h3>
+                    <p class="experiences__company-project-responsibilities">
+                      This product is a course project on object-oriented
+                      programming. The WPF framework and Microsoft SQL Server
+                      database were used for implementation.
+                    </p>
+                  </div>
+
+                  <div class="experiences__company-project">
+                    <span class="experiences__company-project-role"
+                      >Frontend Developer</span
+                    >
+                    <h3 class="experiences__company-project-name">
+                      Virtual Music Kit
+                    </h3>
+                    <p class="experiences__company-project-responsibilities">
+                      This was one of my earlier projects where I focused on DOM
+                      events. I mapped specific keyboard keys to audio files to
+                      simulate a metallophone. The key takeaway was
+                      understanding how to handle keydown and click events
+                      efficiently and ensuring the audio played without delay. I
+                      also implemented visual feedback using CSS classes that
+                      were toggled via JavaScript
+                    </p>
+                  </div>
+                  <div class="experiences__company-project">
+                    <span class="experiences__company-project-role"
+                      >Frontend Developer</span
+                    >
+                    <h3 class="experiences__company-project-name">
+                      English puzzle
+                    </h3>
+                    <p class="experiences__company-project-responsibilities">
+                      In this project, I built a Single Page Application using
+                      TypeScript. The main challenge was implementing the Drag &
+                      Drop mechanic for arranging words and validating the
+                      sentence structure in real-time. I also worked with an API
+                      to fetch level data and used LocalStorage so users
+                      wouldn't lose their progress.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="additional-info fv">
+                <div class="additional-info__education">
+                  <h3 class="additional-info__education-header">Education</h3>
+                  <div class="additional-info__education-university">
+                    <span
+                      class="additional-info__education-university-durability"
+                      >2023-2027</span
+                    >
+                    <h3 class="experiences__company-header-name">
+                      Computer Science (Bachelor)
+                    </h3>
+                    <p class="additional-info__education-university-name">
+                      Bohdan Khmelnytskyi National University of Cherkasy
+                    </p>
+                  </div>
+                </div>
+                <div class="experiences__company">
+                  <div class="experiences__company-header">
+                    <span class="experiences__company-header-durability"
+                      >2023-Present</span
+                    >
+                    <h3 class="experiences__company-header-name">Courses</h3>
+                  </div>
+
+                  <div class="experiences__company-project">
+                    <h3 class="experiences__company-project-name">Epam</h3>
+                    <ul class="experiences__company-project-responsibilities">
+                      <li>Introduction to Front-End Ukraine 2025 #6</li>
+                      <li>[Fundamentals] Front-End 2023-2024</li>
+                      <li>IT Marathon 5.0 (40 hours)</li>
+                    </ul>
+                    <h3 class="experiences__company-project-name">
+                      freeCodeCamp
+                    </h3>
+                    <ul class="experiences__company-project-responsibilities">
+                      <li>Responsive Web Design Certification</li>
+                      <li>
+                        JavaScript Algorithms and Data Structures Certification
+                      </li>
+                    </ul>
+                    <h3 class="experiences__company-project-name">SoloLearn</h3>
+                    <ul class="experiences__company-project-responsibilities">
+                      <li>C# Intermediate</li>
+                      <li>Web Development</li>
+                      <li>Introduction to JavaScript</li>
+                      <li>JavaScript Intermediate</li>
+                      <li>Front-end for Beginners</li>
+                    </ul>
+                    <h3 class="experiences__company-project-name">
+                      The Rolling Scopes School
+                    </h3>
+                    <ul class="experiences__company-project-responsibilities">
+                      <li>JS/FE 2025 Q3</li>
+                      <li>React 2026 Q2</li>
+                    </ul>
+                    <h3 class="experiences__company-project-name">
+                      Codecademy
+                    </h3>
+                    <ul class="experiences__company-project-responsibilities">
+                      <li>Learn React</li>
+                    </ul>
+                    <h3 class="experiences__company-project-name">
+                      Google AI Professional Certificate
+                    </h3>
+                    <ul class="experiences__company-project-responsibilities">
+                      <li>AI Fundamentals</li>
+                      <li>AI for Brainstorming and Planning</li>
+                      <li>AI for Research and Insights</li>
+                      <li>AI for Writing and Communication</li>
+                      <li>AI for Content Creation</li>
+                      <li>AI for Data Analysis (in Progress)</li>
+                      <li>AI Professional (in Progress)</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="additional-info__languages">
+                  <h3 class="additional-info__languages-header">Languages</h3>
+                  <p class="additional-info__languages-item">English (B2)</p>
+                  <p class="additional-info__languages-item">
+                    Ukrainian (Native)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
