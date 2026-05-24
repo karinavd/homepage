@@ -14,6 +14,9 @@ body {
   --icon-color: #6a737d;
   --border-color: #ff9a0045;
   --text-decoration-color: #ff9a00;
+  --tangeto-color: #f3500A;
+  --sinopia-color: #d92200;
+  --dark-red-color: #920004;
 }
 
 .container {
@@ -164,6 +167,43 @@ body {
 .skills__text {
   color: var(--secondary-text-color);
   text-align: justify;
+}
+.skills__container{
+  display:flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skills__category-title{
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.skills__list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  
+}
+.skill-tag{
+  padding: 10px;
+  font-size: 0.9rem;
+  background-color: var(--border-color);
+  color: var(--primary-text-color);
+  border-radius: 5%;
+  font-weight: 600;
+}
+.tangeto > * {
+  color: var(--tangeto-color);
+  border: 2px solid var(--tangeto-color);
+}
+.sinopia > * {
+  color: var(--sinopia-color);
+  border: 2px solid var(--sinopia-color);
+}
+.dark-red > *{
+  color: var(--dark-red-color);
+  border: 2px solid var(--dark-red-color);
 }
 Experience and additional info styles
 
